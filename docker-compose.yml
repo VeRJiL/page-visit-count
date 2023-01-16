@@ -1,0 +1,9 @@
+version: '4'
+services:
+  redis-server:
+    image: 'redis'
+  page-visit-count:
+    restart: always
+    build: .
+    ports:
+      - "4001:8081"
